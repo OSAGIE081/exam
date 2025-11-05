@@ -1,0 +1,263 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fc;
+  color: #333;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  background: #fff;
+  padding: 15px 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+  
+}
+nav {
+    margin-left: 800px;
+    padding-top: 10px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c4aff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #5b6cff;
+}
+
+.btn-signup {
+  background: linear-gradient(90deg, #5b6cff, #8457ff);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  opacity: 0.9;
+}
+
+
+.welcome {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  text-align: center;
+  padding: 60px 20px 100px;
+}
+
+.welcome-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+
+}
+.welcome-content {
+    margin-bottom: 80px;
+}
+
+.welcome-content h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.welcome-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  width: 90%;
+  max-width: 1100px;
+  margin: -60px auto 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+
+.info-box {
+  flex: 1;
+  background: #f8f9ff;
+  border-right: 1px solid #eee;
+  padding: 40px 50px;
+}
+
+.info-box h2 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.info-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.info-box ul {
+  list-style: none;
+}
+
+.info-box li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+.login-box {
+  flex: 1;
+  padding: 40px 50px;
+}
+
+.login-box h2 {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.login-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color:  #555;
+}
+
+.forgot-link {
+  color: #5b6cff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background: linear-gradient(90deg, #5b6cff, #8457ff);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+}
+
+.no-account {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.no-account a {
+  color: #5b6cff;
+  text-decoration: none;
+}
+
+.no-account a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: center;
+  background: #1e1f29;
+  color: #ccc;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .main-box {
+    flex-direction: column;
+  }
+  .nav {
+    
+  }
+
+  .info-box,
+  .login-box {
+    border: none;
+    padding: 30px;
+  }
+
+  .menu {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav ul li {
+    margin: 15px 0;
+  }
+
+  /* Hide signup button by default */
+  .signup-btn {
+    display: none;
+  }
+}
